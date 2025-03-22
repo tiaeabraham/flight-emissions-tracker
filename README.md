@@ -116,10 +116,15 @@ Follow these steps in a terminal. The order of operations is important:
    ```
    - Enter your MySQL root password when prompted.
 
-3. **(Optional) Create the `tripsdb` database** if you haven’t already:
+3. Create the `tripsdb` database**:
    ```sql
-   SHOW DATABASES;
+   SHOW DATABASES; -- to check if this database exists
+   DROP DATABASE tripsdb; -- if database already exists
    CREATE DATABASE tripsdb;
+   ```
+
+4. Select the `tripsdb`:
+   ```sql
    USE tripsdb;
    ```
 
@@ -132,7 +137,7 @@ Follow these steps in a terminal. The order of operations is important:
    source grant-permissions.sql;-- Part F: Creates additional users and grants privileges
    source queries.sql;          -- Part H: Check that queries run with no errors/warnings
    ```
-   - You may see “DROP TABLE IF EXISTS” warnings; these are safe to ignore.
+   - You may see “DROP ... IF EXISTS” warnings; these are safe to ignore.
 
 5. **Quit MySQL**:
    ```sql
