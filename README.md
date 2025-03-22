@@ -59,7 +59,7 @@ final_project/
 ├── load-data.sql         # Loads CSV data into your DB tables (Part D)
 ├── queries.sql           # Sample queries for testing (Part H)
 ├── README.md             # This README (Part K)
-├── reflection.pdf        # Reflection on design & implementation (Parts A, C, G, L)
+├── reflection.pdf        # Reflection on design & implementation (Parts A, B, G, L)
 ├── setup-passwords.sql   # Basic password management for the DB (Part E)
 ├── setup-routines.sql    # Creates stored routines and triggers (Part I)
 └── setup.sql             # Main DDL to create your schema (Part B)
@@ -67,7 +67,7 @@ final_project/
 
 - **`data/`**: Contains all CSV files used by `load-data.sql`.
 - **`figures/`**: Holds ER diagrams and flowcharts (PNGs/JPEGs).
-- **`reflection.pdf`**: Written reflection, including diagrams, relational algebra, and normal form justifications.
+- **`reflection.pdf`**: Written reflection, including diagrams, relational algebra, and index justifications.
 
 ---
 
@@ -204,7 +204,7 @@ Additionally, the `adminuser` account has **10 sample trips** loaded under its c
 - **`reflection.pdf`** (Parts A, C, G, L) contains:
   - ER diagrams
   - Relational algebra justifications
-  - Normal form discussions
+  - Index discussions
   - Overall project reflection (challenges, successes, future improvements)
 
 - **`link-to-submission.txt`**:  
