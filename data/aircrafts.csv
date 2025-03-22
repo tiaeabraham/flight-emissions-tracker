@@ -1,0 +1,182 @@
+aircraft_id,model,emissions_per_mi
+ND2,Aerospatiale (Nord) 262,0.25
+CRV,Aerospatiale (Sud Aviation) Se.210 Caravelle,0.2
+NDC,Aerospatiale SN.601 Corvette,0.18
+AT4,Aerospatiale/Alenia ATR 42-300,0.15
+AT5,Aerospatiale/Alenia ATR 42-500,0.14
+ATR,Aerospatiale/Alenia ATR 42-600,0.13
+AT7,Aerospatiale/Alenia ATR 72,0.14
+AB3,Airbus A300,0.17
+AB6,Airbus A300-600,0.15
+310,Airbus A310,0.16
+318,Airbus A318,0.15
+319,Airbus A319,0.14
+31N,Airbus A319neo,0.12
+320,Airbus A320,0.14
+32N,Airbus A320neo,0.12
+321,Airbus A321,0.13
+32Q,Airbus A321neo,0.11
+330,Airbus A330,0.13
+332,Airbus A330-200,0.12
+333,Airbus A330-300,0.12
+338,Airbus A330-800neo,0.1
+339,Airbus A330-900neo,0.1
+340,Airbus A340,0.15
+342,Airbus A340-200,0.15
+343,Airbus A340-300,0.15
+345,Airbus A340-500,0.16
+346,Airbus A340-600,0.16
+350,Airbus A350,0.11
+351,Airbus A350-1000,0.11
+359,Airbus A350-900,0.11
+380,Airbus A380,0.12
+388,Airbus A380-800,0.12
+A40,Antonov AN-140,0.16
+A81,Antonov An-148,0.14
+A58,Antonov An-158,0.14
+AN4,Antonov AN-24,0.18
+A28,Antonov AN-28,0.2
+AR1,Avro RJ100,0.17
+AR7,Avro RJ70,0.17
+AR8,Avro RJ85,0.17
+146,BAe 146,0.17
+141,BAe 146-100,0.17
+142,BAe 146-200,0.17
+143,BAe 146-300,0.17
+BEH,Beechcraft 1900,0.2
+703,Boeing 707,0.22
+717,Boeing 717,0.14
+B72,Boeing 720B,0.21
+727,Boeing 727,0.2
+721,Boeing 727-100,0.2
+722,Boeing 727-200,0.2
+737,Boeing 737,0.14
+7MJ,Boeing 737 MAX 10,0.12
+7M7,Boeing 737 MAX 7,0.12
+7M8,Boeing 737 MAX 8,0.12
+7M9,Boeing 737 MAX 9,0.12
+CRJ,Canadair Regional Jet,0.23
+73W,Boeing 737-700,0.11
+732,Boeing 737-200,0.18
+733,Boeing 737-300,0.16
+734,Boeing 737-400,0.16
+735,Boeing 737-500,0.15
+736,Boeing 737-600,0.14
+73G,Boeing 737-700,0.14
+738,Boeing 737-800,0.14
+739,Boeing 737-900,0.14
+747,Boeing 747,0.16
+741,Boeing 747-100,0.18
+742,Boeing 747-200,0.18
+743,Boeing 747-300,0.17
+744,Boeing 747-400,0.16
+74J,Boeing 747-400D,0.16
+748,Boeing 747-8,0.14
+74L,Boeing 747SP,0.17
+74R,Boeing 747SR,0.17
+757,Boeing 757,0.15
+752,Boeing 757-200,0.15
+753,Boeing 757-300,0.15
+767,Boeing 767,0.14
+762,Boeing 767-200,0.15
+763,Boeing 767-300,0.14
+764,Boeing 767-400,0.14
+777,Boeing 777,0.13
+772,Boeing 777-200,0.13
+77L,Boeing 777-200LR,0.13
+773,Boeing 777-300,0.13
+77W,Boeing 777-300ER,0.12
+778,Boeing 777-8,0.12
+779,Boeing 777-9,0.12
+787,Boeing 787,0.12
+78J,Boeing 787-10,0.12
+788,Boeing 787-8,0.12
+789,Boeing 787-9,0.12
+CS1,Bombardier CS100,0.13
+CS3,Bombardier CS300,0.12
+CCX,Bombardier Global Express,0.15
+B11,British Aerospace (BAC) One Eleven,0.2
+H25,British Aerospace 125 series / Hawker/Raytheon 700/800/800XP/850/900,0.16
+ATP,British Aerospace ATP,0.16
+J31,British Aerospace Jetstream 31,0.22
+J32,British Aerospace Jetstream 32,0.22
+J41,British Aerospace Jetstream 41,0.18
+CCJ,Canadair Challenger,0.16
+CR1,Canadair Regional Jet 100,0.16
+CRK,Canadair Regional Jet 1000,0.15
+CR2,Canadair Regional Jet 200,0.16
+CR7,Canadair Regional Jet 700,0.15
+CR9,Canadair Regional Jet 900,0.15
+CNJ,Cessna Citation CJ3,0.17
+SSC,Concorde,0.5
+D20,Dassault Falcon 2000,0.16
+DF3,Dassault Falcon 50,0.17
+DF7,Dassault Falcon 7X,0.15
+DF9,Dassault Falcon 900,0.16
+DH7,De Havilland Canada DHC-7 Dash 7,0.17
+DH1,De Havilland Canada DHC-8-100 Dash 8/8Q,0.16
+DH2,De Havilland Canada DHC-8-200 Dash 8/8Q,0.16
+DH3,De Havilland Canada DHC-8-300 Dash 8,0.15
+DH4,De Havilland Canada DHC-8-400 Dash 8Q,0.14
+D10,Douglas DC-10,0.18
+D6F,Douglas DC-6,0.18
+D8T,Douglas DC-8-50,0.2
+D8L,Douglas DC-8-62,0.19
+D8Q,Douglas DC-8-72,0.18
+D91,Douglas DC-9-10,0.17
+D92,Douglas DC-9-20,0.17
+D93,Douglas DC-9-30,0.17
+D94,Douglas DC-9-40,0.17
+D95,Douglas DC-9-50,0.17
+E70,Embraer 170,0.14
+E75,Embraer 175,0.14
+E7W,Embraer 175 (long wing),0.14
+E90,Embraer 190,0.13
+E95,Embraer 195,0.13
+290,Embraer E190-E2,0.12
+295,Embraer E195-E2,0.12
+EMB,Embraer EMB 110 Bandeirante,0.2
+EM2,Embraer EMB 120 Brasilia,0.18
+ER3,Embraer Legacy 600,0.15
+EP1,Embraer Phenom 100,0.18
+EP3,Embraer Phenom 300,0.16
+ERD,Embraer RJ140,0.15
+ER4,Embraer RJ145,0.15
+FRJ,Fairchild Dornier 328JET,0.15
+D28,Fairchild Dornier Do.228,0.22
+D38,Fairchild Dornier Do.328,0.18
+100,Fokker 100,0.16
+F50,Fokker 50,0.17
+F70,Fokker 70,0.16
+F27,Fokker F27 Friendship,0.19
+F21,Fokker F28 Fellowship,0.17
+GR3,Gulfstream G280,0.15
+GJ6,Gulfstream G650,0.14
+GJ4,Gulfstream IV,0.15
+GJ5,Gulfstream V,0.15
+HS7,Hawker Siddeley HS 748,0.18
+114,Ilyushin IL114,0.16
+IL8,Ilyushin IL18,0.19
+IL6,Ilyushin IL62,0.2
+ILW,Ilyushin IL86,0.17
+193,Ilyushin IL96,0.16
+LRJ,Learjet 35,0.18
+L10,Lockheed L-1011 Tristar,0.16
+LOE,Lockheed L-188 Electra,0.19
+M11,McDonnell Douglas MD-11,0.15
+M81,McDonnell Douglas MD-81,0.16
+M82,McDonnell Douglas MD-82,0.16
+M83,McDonnell Douglas MD-83,0.16
+M87,McDonnell Douglas MD-87,0.16
+M88,McDonnell Douglas MD-88,0.16
+M90,McDonnell Douglas MD-90,0.15
+YS1,NAMC YS-11,0.18
+PL2,Pilatus PC-12,0.15
+S20,Saab 2000,0.15
+SF3,Saab SF340A/B,0.17
+SU9,Sukhoi Superjet 100-95,0.14
+TU3,Tupolev Tu-134,0.18
+TU5,Tupolev Tu-154,0.18
+T20,Tupolev Tu-204,0.15
+YK4,Yakovlev Yak-40,0.17
+YK2,Yakovlev Yak-42,0.16
