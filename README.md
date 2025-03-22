@@ -107,7 +107,7 @@ Follow these steps in a terminal. The order of operations is important:
 1. **Clone or download** this repository (if not already done):
    ```bash
    git clone <URL_to_this_repo>
-   cd final_project
+   cd flight-emissions-tracker
    ```
 
 2. **Start MySQL** from within this directory:
