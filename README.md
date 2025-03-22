@@ -77,10 +77,21 @@ final_project/
    - Ensure that the `mysql` command is available in your terminal.
    - You need a MySQL root user (or any user with privileges to create databases and users).
 
-2. **Python 3** (version 3.6+ recommended)
-   - You will need the `mysql-connector-python` (or equivalent) package installed, for example:
+2. **Python 3** (version 3.6+ recommended)  
+   - You will need the following Python modules installed:
+     ```python
+     import sys               # Built-in, for error messages, etc.
+     import mysql.connector   # MySQL connector for Python
+     import pandas as pd      # Data manipulation
+     from tabulate import tabulate  # For pretty-printing tables
+     from datetime import datetime  # Built-in, for date/time
+     ```
+     If any import fails, install or update the corresponding package, for example:
      ```bash
      pip install mysql-connector-python
+     pip install pandas
+     pip install pyarrow
+     pip install tabulate
      ```
    - The application has been tested on Python 3.x.
 
@@ -189,17 +200,4 @@ Additionally, the `adminuser` account has **10 sample trips** loaded under its c
   - ER diagrams
   - Relational algebra justifications
   - Normal form discussions
-  - Overall project reflection (challenges, successes, future improvements)
-
-- **`link-to-submission.txt`**:  
-  All links to data sources, high-res diagrams, additional documentation, and the full code on GitHub is place here.
-
----
-
-## Contact
-
-For questions, please reach out to the repository owner at tabraham@caltech.edu or open an issue in this GitHub repository. We hope you find this Flight Emissions Tracker useful and educational!
-
----
-
-**End of README**
+  - Overall pr
