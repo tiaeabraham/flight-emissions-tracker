@@ -3,7 +3,6 @@
 -- ==============================================
 -- This script creates MySQL users and grants appropriate privileges
 -- for application access to the Flight Carbon Footprint database.
--- TODO Figure out how to do specific databases stuff.
 
 DROP USER IF EXISTS 'appadmin'@'localhost';
 DROP USER IF EXISTS 'appclient'@'localhost';
