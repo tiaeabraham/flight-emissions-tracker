@@ -228,4 +228,85 @@ def add_new_flight_route():
             return
 
         # Insert new flight route
-        cursor.execute("INSERT INTO routes (from_airport_id, to_airport_id, aircraf
+        cursor.execute("INSERT INTO routes (from_airport_id, to_airport_id, aircraft_id) VALUES (%s, %s, %s);",
+                       (from_airport_id, to_airport_id, aircraft_id))
+        conn.commit()
+        print(f"New route added: {from_airport_id} → {to_airport_id} using aircraft {aircraft_id}.")
+
+    except mysql.connector.Error:
+        print("Database update failed. Please contact the system administrator.")
+
+    finally:
+        cursor.close()
+        conn.close()
+
+def login():
+    """
+    Handles admin login by calling stored function `authenticate`.
+    Checks if the admin's login information is valid, and if the user has
+    admin permissions.
+    """
+    print("\n------------------- Admin Login ------------------")
+    username = input("Enter admin username: ").strip().lower()  # Normalize username
+    password = input("Enter admin password: ")
+
+    # Establish database connection
+    conn = get_conn()
+    cursor = conn.cursor()
+
+    try:
+        # Step 1: Authenticate username and password
+        cursor.execute("SELECT authenticate(%s, %s);", (username, password))
+        result = cursor.fetchone()
+
+        if result[0] == 0:
+            print("Error: Invalid credentials. Exiting.")
+            return False
+
+        # Step 2: Check if the user is an admin
+        cursor.execute("SELECT is_admin FROM users WHERE username = %s;", (username,))
+        is_admin = cursor.fetchone()
+
+        if not is_admin or is_admin[0] == 0:
+            print("Error: User does not have admin privileges. Exiting.")
+            return False
+
+        print("Admin login successful.")
+
+    except mysql.connector.Error:
+        print("Database access attempt failed. Please contact the system administrator.")
+        return False
+
+    finally:
+        cursor.close()
+        conn.close()
+    return True
+
+def main():
+    """
+    Main program loop for admin functionalities.
+    """
+    if not login():
+        return
+
+    # Admin menu loop
+    while True:
+        show_options()
+        choice = input("Select an option: ").strip()
+
+        if choice == '1':
+            reset_user_password()
+        elif choice == '2':
+            set_user_to_admin()
+        elif choice == '3':
+            update_aircraft_emissions()
+        elif choice == '4':
+            add_new_flight_route()
+        elif choice == '5':
+            print("Exiting Admin Dashboard.")
+            sys.exit(0)
+        else:
+            print("Invalid option. Please try again.")
+
+if __name__ == "__main__":
+    main()

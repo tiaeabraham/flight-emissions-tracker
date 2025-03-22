@@ -693,4 +693,116 @@ def change_password(username):
         return
 
     try:
-        cursor.callproc('sp_change_password', (username, new_passw
+        cursor.callproc('sp_change_password', (username, new_password))
+        conn.commit()
+        print("Password changed successfully!")
+
+    except mysql.connector.Error:
+        print("Database access attempt failed. Please contact the system administrator.")
+
+    finally:
+        cursor.close()
+        conn.close()
+
+def delete_trip(user_id):
+    """
+    Allows the user to delete a trip from their saved trips.
+    Ensures the trip ID exists and is within the valid range.
+    """
+    conn = get_conn()
+    cursor = conn.cursor()
+
+    try:
+        # Fetch the maximum trip_id for this user
+        cursor.execute("SELECT MAX(trip_id) FROM trips WHERE user_id = %s;", (user_id,))
+        max_trip_id = cursor.fetchone()[0]
+
+        if max_trip_id is None:
+            print("Error: You have no saved trips to delete.")
+            return
+
+        # Prompt the user for a trip_id
+        try:
+            trip_id = int(input(f"Enter the trip ID to delete (1 to {max_trip_id}): ").strip())
+
+            if trip_id < 1 or trip_id > max_trip_id:
+                print(f"Error: Trip ID must be between 1 and {max_trip_id}. Please try again.")
+                return
+            
+        except ValueError:
+            print("Error: Please enter a valid numeric trip ID.")
+            return
+
+        # Check if the trip ID exists for this user
+        cursor.execute(
+            "SELECT COUNT(*) FROM trips WHERE user_id = %s AND trip_id = %s;",
+            (user_id, trip_id)
+        )
+        result = cursor.fetchone()
+
+        if result[0] == 0:
+            print("Error: This trip ID has already been deleted.")
+            return
+
+        # Delete the trip
+        cursor.execute(
+            "DELETE FROM trips WHERE user_id = %s AND trip_id = %s;",
+            (user_id, trip_id)
+        )
+
+        conn.commit()
+        print(f"Trip {trip_id} successfully deleted!")
+
+    except mysql.connector.Error:
+        print("Database update failed. Please contact the system administrator.")
+
+    finally:
+        cursor.close()
+        conn.close()
+
+def main():
+    """
+    Main program loop for user authentication.
+    """
+    user_id = None
+    username = None
+    while True:
+        show_options("login")
+        choice = input('Select an option: ').strip()
+        
+        if choice == '1':
+            username = login()
+            if username:
+                user_id = get_user_id(username)
+                break
+        elif choice == '2':
+            create_account()
+        elif choice == '3':
+            print('Goodbye!')
+            sys.exit(0)  # Terminate the program
+        else:
+            print('Invalid option. Please try again.')
+
+
+    while user_id:
+        show_options("main", username)
+        user_choice = input("Select an option: ").strip()
+        if user_choice == '1':
+            get_emissions(user_id)
+        elif user_choice == '2':
+            view_trips(user_id)
+        elif user_choice == '3':  # Insert a new trip
+            insert_trip(user_id)
+        elif user_choice == '4': 
+            delete_trip(user_id)
+        elif user_choice == '5':  # Find an airport
+            find_airport()
+        elif user_choice == '6':  
+            change_password(username)
+        elif user_choice == '7':
+            print("Logging out...")
+            main()
+        else:
+            print("Invalid option. Please try again.")
+if __name__ == "__main__":
+    main()

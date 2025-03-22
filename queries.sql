@@ -239,4 +239,19 @@ WHERE from_airport_id = 'JFK'
 INSERT INTO routes (from_airport_id, to_airport_id, aircraft_id) 
 VALUES ('JFK', 'SIN', '359');
 
--- ==========================================================================
+-- ============================================================================
+--                             reflection.pdf
+-- ============================================================================
+--  Additional query written to demonstrate use of joins on this database. 
+--  Retrieves all trips that were flown using an aircraft with model name 
+--  `Boeing 737-800'. It joins the 'trips' table with the 'routes' table (which 
+--  links flights to aircrafts) and the 'aircraft' table (which contains 
+--  aircraft model names).
+-- ============================================================================
+SELECT t.from_airport_id, t.to_airport_id, t.departure_date, 
+       t.num_passengers, t.total_emissions, a.model
+FROM trips t
+JOIN routes r ON t.from_airport_id = r.from_airport_id 
+               AND t.to_airport_id = r.to_airport_id
+JOIN aircrafts a ON r.aircraft_id = a.aircraft_id
+WHERE a.model = 'Boeing 737-800' AND t.user_id = 1;

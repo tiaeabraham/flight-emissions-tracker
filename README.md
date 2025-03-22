@@ -200,4 +200,17 @@ Additionally, the `adminuser` account has **10 sample trips** loaded under its c
   - ER diagrams
   - Relational algebra justifications
   - Normal form discussions
-  - Overall pr
+  - Overall project reflection (challenges, successes, future improvements)
+
+- **`link-to-submission.txt`**:  
+  All links to data sources, high-res diagrams, additional documentation, and the full code on GitHub is place here.
+
+---
+
+## Contact
+
+For questions, please reach out to the repository owner at tabraham@caltech.edu or open an issue in this GitHub repository. We hope you find this Flight Emissions Tracker useful and educational!
+
+---
+
+**End of README**
