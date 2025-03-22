@@ -164,7 +164,7 @@ After setting up the database, you can run either of the command-line applicatio
    ```
    - Perform tasks like user password resets, granting privileges, updating aircraft information, and so on.
 
-If you run into any issues, ensure your database credentials and connection details match those in the Python source files.
+If you run into any issues, ensure your database credentials and connection details match those in the Python source files, specifically in `get_conn()`.
 
 ---
 
