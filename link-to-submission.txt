@@ -2,7 +2,7 @@ Link to GitHub:
 - https://github.com/tiaeabraham/flight-emissions-tracker/
 
 Link to `reflection.pdf`:
-- TODO
+- https://drive.google.com/file/d/1VrV_a66ku6Q79TejJAT4DNUETviqRjpe/view?usp=drive_link
 
 Links to original data:
 1. main source: https://openflights.org/data.php
