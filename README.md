@@ -201,7 +201,7 @@ Additionally, the `adminuser` account has **10 sample trips** loaded under its c
 
 ## Reflection and Additional Documentation
 
-- **`reflection.pdf`** (Parts A, C, G, L) contains:
+- **`reflection.pdf`** (Parts A, B, G, L) contains:
   - ER diagrams
   - Relational algebra justifications
   - Index discussions
