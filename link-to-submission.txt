@@ -1,0 +1,32 @@
+Link to GitHub:
+- TODO
+
+Link to `reflection.pdf`:
+- TODO
+
+Links to original data:
+1. main source: https://openflights.org/data.php
+2. airports: https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat
+3. routes: https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat
+   - hasn't been updated since 2014
+4. planes: https://raw.githubusercontent.com/jpatokal/openflights/master/data/planes.dat
+5. countries: https://raw.githubusercontent.com/jpatokal/openflights/master/data/countries.dat
+
+Links to cleaned up data:
+1. aircrafts: https://drive.google.com/file/d/1gSl-F64L2LMKZCu_X2Mi9vMfp_Kfj8U1/view?usp=drive_link
+2. airports: https://drive.google.com/file/d/1RGhpHgVdWKJCHlR5kJL71q04cXwmCtpz/view?usp=drive_link
+3. countries: https://drive.google.com/file/d/1BnDcQ-_pqgL-qsERaWRevDgNOsW0SqTz/view?usp=drive_link
+4. routes: https://drive.google.com/file/d/1qSB9m6dWIejmxWTGwZppFLD17OG6rxCx/view?usp=drive_link
+
+Links to ER models:
+1. Final: https://drive.google.com/file/d/15ypfBxvB5Jp3HJBn7g57MsCzA84xifuq/view?usp=drive_link
+2. Milestone: https://drive.google.com/file/d/17WUA-XvGG7ve32i0rkzBLS1knFH8AWSH/view?usp=drive_link
+3. Proposal: https://drive.google.com/file/d/1pG7kfxnRb-FcDu8aCnoiFtYjY_F4uQsG/view?usp=drive_link
+
+Links to User flowcharts:
+1. Final: https://drive.google.com/file/d/1ZeMSWeHuizuJRMjs1f_Bu_NLwtALZUwS/view?usp=drive_link
+2. Milestone: https://drive.google.com/file/d/1CqU-EMyTkt3d1Y6JEj1YIshQVfT2wYF4/view?usp=drive_link
+3. Proposal: https://drive.google.com/file/d/1CvzoVU_jbjGgOkdVkhlsjfVDnXSE5phF/view?usp=drive_link
+
+Link to Admin flowchart:
+- https://drive.google.com/file/d/1kr0xgngW9zw8nSUXj1NQjnCbga2tBgk4/view?usp=drive_link
