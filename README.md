@@ -1,4 +1,3 @@
-```markdown
 # Flight Emissions Tracker
 
 Welcome to the Flight Emissions Tracker! This application helps users calculate, log, and analyze carbon emissions from air travel. It includes two command-line programs—one for client (end-user) operations and another for administrative tasks—and a set of SQL files to create and manage the underlying MySQL database.
@@ -204,4 +203,3 @@ For questions, please reach out to the repository owner at tabraham@caltech.edu 
 ---
 
 **End of README**
-```
